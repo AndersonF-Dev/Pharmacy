@@ -1,9 +1,9 @@
 
 import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom';
-import Logo from '../../assets/imagens/logo.svg'
-import HomeIcom from '../../assets/icones/home.svg'
-import ContatoIcom from '../../assets/icones/contato.svg'
+import Logo from '/assets/imagens/logo.svg'
+import HomeIcom from '/assets/icones/home.svg'
+import ContatoIcom from '/assets/icones/contato.svg'
 import { ReadConteiner, NavConteiner, HomeButtom, Nav, NavList, NavItem, StyledLink, ButtomComteiner, MenuButton, Overlay } from './stylesHead.js'
 
 
@@ -21,7 +21,7 @@ const Head = () => {
                 <div className={menuOpen ? "line open" : "line"} />
             </MenuButton>
 
-            <NavConteiner menuOpen={menuOpen}>
+            <NavConteiner $menuOpen={menuOpen}>
                 <Nav>
                     {/* Botão Home com StyledLink para manter SPA */}
                     <HomeButtom>
